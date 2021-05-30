@@ -5,3 +5,4 @@ __pycache__
 /cropped_files/
 /cropped_files_aug/
 /cropped_files_no_aug/
+/tests/
