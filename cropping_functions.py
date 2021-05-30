@@ -4,8 +4,7 @@ import itertools
 def generate_1d_limits(wind, limit, thresh):
     x_left = []
     x_right = []
-
-    if limit > wind:
+    if limit >= wind:
         x_lim_reached = False
         i = 0
         while not x_lim_reached:
@@ -42,7 +41,6 @@ def generate_cropping_boxes(image, cropping_window, tresh):
     image_width, image_height = image.size
     x_left, x_rigth = generate_1d_limits(cropping_window, image_width, tresh)
     x_bottom, x_top = generate_1d_limits(cropping_window, image_height, tresh)
-
     croping_boxes = generate_cropping_boxes_from_limits(x_left, x_rigth, x_bottom, x_top)
 
     return croping_boxes

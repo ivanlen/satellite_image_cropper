@@ -1,3 +1,7 @@
 .idea
 .ipynb_checkpoints
 __pycache__
+/no_border/
+/cropped_files/
+/cropped_files_aug/
+/cropped_files_no_aug/
